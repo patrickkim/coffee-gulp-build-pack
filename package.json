@@ -1,0 +1,40 @@
+{
+  "name": "gulp-coffee-build-pack",
+  "version": "0.0.1",
+  "description": "Gulp, Coffee Build Pack",
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp development",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "coffee-script": "^1.9.2",
+    "immutable": "^3.7.2",
+    "jeet": "^6.1.2",
+    "lodash": "^3.8.0",
+    "moment": "^2.10.3"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "coffeeify": "^1.1.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^0.2.9",
+    "gulp-concat": "^2.5.2",
+    "gulp-gzip": "*",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-stylus": "^2.0.1",
+    "gulp-svgmin": "^1.1.2",
+    "gulp-uglify": "^1.2.0",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
