@@ -1,22 +1,53 @@
+html, body, #site
+  height: 100%
+
 body
-  background: #f0f0f0
+  background: #747474
+
   font-family: "ProximaNova"
+  font-size: 18px
+  line-height: 1.5em
 
-.thumb
-  position: relative
-  width: 50px; height: 50px
-  background: url("/images/thumbsup.gif") 0 0 no-repeat
-  border: 1px solid $color
+.wrapper
+  max-width: 920px
+  width: 100%
+  margin: 0 auto
+  padding: 20px
 
-  user-select none
-  cursor: pointer
+#site
+  transform: translate3d(0,0,0)
+  transition: transform 300ms
 
-  &:active
-    top: 1px
+#banner
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: url("/images/bg.jpg") center center no-repeat
+  background-size: cover
 
-section
- center()
-aside
- col(1/3)
-article
- col(2/3)
+#header
+  z-index: 2
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  padding-top: 50px
+  background: rgba(255,255,255, 0.5)
+
+#hero
+  z-index: 1
+  position: relative;
+  background: rgba(255,255,255, 0.25)
+
+  width: 100%
+  height: 100%
+  display: table
+
+  .wrapper
+    display: table-cell
+    vertical-align: middle
+
+#body
+  background: #fff
