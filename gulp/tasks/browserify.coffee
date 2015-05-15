@@ -3,7 +3,7 @@ notify     = require "gulp-notify"
 browserify = require "gulp-browserify"
 concat     = require "gulp-concat"
 plumber    = require "gulp-plumber"
-gzip       = require "gulp-gzip"
+uglify     = require "gulp-uglify"
 
 source_path         = "./src/javascripts/index.coffee"
 transformations     = ["coffeeify"]
@@ -31,6 +31,5 @@ gulp.task "js-min", ->
       requires: required_packages)
     .pipe concat("app.js")
     .pipe uglify()
-    .pipe gzip()
     .pipe gulp.dest("build/js")
     .pipe notify(message: "JS [PRODUCTION] ready!")

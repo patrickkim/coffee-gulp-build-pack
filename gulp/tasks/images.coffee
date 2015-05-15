@@ -1,9 +1,9 @@
-gulp         = require "gulp"
-notify       = require "gulp-notify"
-image_min    = require "gulp-imagemin"
-cache        = require "gulp-cache"
-svg_min      = require "gulp-svgmin"
-plumber      = require "gulp-plumber"
+gulp      = require "gulp"
+notify    = require "gulp-notify"
+image_min = require "gulp-imagemin"
+cache     = require "gulp-cache"
+svg_min   = require "gulp-svgmin"
+plumber   = require "gulp-plumber"
 
 gulp.task "images", ->
   gulp.src "public/images/**/*"

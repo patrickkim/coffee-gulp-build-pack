@@ -1,7 +1,6 @@
 gulp = require "gulp"
 
 gulp.task "watch", ->
-  plugins.livereload.listen();
   gulp.watch "src/javascripts/**", [ "js" ]
   gulp.watch "src/stylesheets/**", [ "css" ]
   gulp.watch "static/fonts/**", [ "copy_fonts" ]

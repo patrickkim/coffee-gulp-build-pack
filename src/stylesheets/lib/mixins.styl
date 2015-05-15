@@ -1,17 +1,1 @@
-$CDN_URL = "http://s3.amazonaws.com/"
 
-image_url(image_name)
-  if $ENV == "development"
-    path = "/images/"
-  else
-    path = $CDN_URL
-
-  url(path+image_name)
-
-font_url(font_name)
-  if $ENV == "development"
-    path = "/fonts/"
-  else
-    path = $CDN_URL
-
-  url(path+font_name)

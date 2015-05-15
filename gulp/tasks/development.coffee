@@ -1,5 +1,7 @@
-gulp  = require "gulp"
+gulp = require "gulp"
 
-# Run watch to compile with browserify
-gulp.task "development", ["build", "watch"]
-gulp.task "build", ["copy_static", "css", "js"]
+gulp.task "development", ["build"], ->
+  gulp.start "watch", "server"
+
+gulp.task "build", ["clean"], ->
+  gulp.start "copy_static", "css", "js"
