@@ -1,0 +1,56 @@
+#hero
+  position: relative
+  width: 100%
+  height: 90%
+
+  .slide
+    z-index: 1
+    position: absolute
+    top: 0; bottom: 0; right: 0; left: 0;
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+
+  #nav-left, #nav-right
+    z-index: 101
+    position: absolute
+    top: 0; bottom: 0;
+    width: 10%
+    background-position: center center
+    background-repeat: no-repeat
+
+  #nav-left
+    left: 0
+    background-image: url("/vectors/arrow_head_l.svg")
+    cursor: url("/vectors/arrow_l.svg"), auto
+
+  #nav-right
+    right: 0
+    background-image: url("/vectors/arrow_head_r.svg")
+    cursor: url("/vectors/arrow_r.svg"), auto
+
+  #nav-paging
+    z-index: 100
+    position: absolute
+    bottom: 15px
+    width: 100%
+    margin: 0
+    text-align: center
+
+    li
+      display: inline-block
+      margin: 0 5px
+      zoom: 1
+
+    a
+      $w = 3vh
+
+      display: inline-block
+      border-radius: $w
+      background: rgba(255,255,255, 0.5)
+      width: $w; height: $w;
+      overflow: hidden
+      text-indent: -999px
+
+    .active
+      background: #fff

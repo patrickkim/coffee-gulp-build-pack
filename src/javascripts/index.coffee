@@ -1,7 +1,7 @@
-_ = require "lodash"
+_         = require "lodash"
 Immutable = require "immutable"
 
-window._ = _
+window._  = _
 
 $ ->
   console.log "client ready!"
