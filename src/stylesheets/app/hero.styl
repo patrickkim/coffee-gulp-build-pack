@@ -14,10 +14,18 @@
   #nav-left, #nav-right
     z-index: 101
     position: absolute
-    top: 0; bottom: 0;
+    top: 0
     width: 10%
+    height: 100%
     background-position: center center
     background-repeat: no-repeat
+    opacity: 0.5
+
+    &:hover
+      opacity: 1
+
+    &:active
+      margin-top: 3px
 
   #nav-left
     left: 0
@@ -47,10 +55,15 @@
 
       display: inline-block
       border-radius: $w
-      background: rgba(255,255,255, 0.5)
+      background: rgba(0,0,0, 0.5)
       width: $w; height: $w;
       overflow: hidden
       text-indent: -999px
+      cursor: pointer
+      transition: background 500ms ease-out
+
+      &:hover
+        background: rgba(255,255,255, 0.75)
 
     .active
       background: #fff
