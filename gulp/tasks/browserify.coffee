@@ -4,12 +4,11 @@ browserify = require "gulp-browserify"
 concat     = require "gulp-concat"
 plumber    = require "gulp-plumber"
 uglify     = require "gulp-uglify"
-hbsfy      = require "hbsfy"
 
 source_path         = "./src/javascripts/index.coffee"
-transformations     = ["coffeeify", "hbsfy"]
-accepted_extensions = [".coffee", ".hbs"]
-required_packages   = ["lodash", "immutable", "moment"]
+transformations     = ["coffeeify", "ectify"]
+accepted_extensions = [".coffee", ".ect"]
+required_packages   = ["underscore", "immutable", "moment", "backbone"]
 
 gulp.task "js", ->
   gulp.src source_path, { read: false }
