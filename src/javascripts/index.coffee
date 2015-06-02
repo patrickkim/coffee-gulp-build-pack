@@ -7,4 +7,3 @@ window.template = require("./templates/test.ect")
 
 $ ->
   console.log "client ready!"
-  console.log template
