@@ -1,38 +1,39 @@
 #footer
+  flex-wrap: wrap
+  justify-content: center
+  background: red;
+
+  a
+    display: block
+
   .wrapper
-    margin: 30px auto
+    display: flex
+    max-width: 800px
+    background: green
+    margin: 0 auto
 
-#subscribe
-  position: relative
-  overflow: hidden
-  width: 100%
-  max-width: 800px
-  margin: 1em auto
+  #foot-links
+    display: flex
+    flex: 1
+    margin: 0 20px
+    max-width: 400px
+    border-right: 1px solid #dedede
 
-  touch-callout: none
-  tap-highlight-color: transparent
-  user-select: none
+  .logo
+    width: 60px
+    height: 60px
+    background: #ccc
 
-  #field-email
-    float: left
-    appearance: none
-    border: none
+  .link-group
+    padding: 20px
     margin: 0
-    width: 55%
-    padding: 1em
-    background: #fff
-    color: #758590
-    font-size: 20px
-    border-radius: 0
 
-  button
-    position: absolute
-    top: 0
-    right: 0
-    width: 45%
-    height: 100%
-    outline: none
-    border: none
-    border-radius: 0
-    background: #ebd054
-    color: #fff
+  #foot-social
+    flex: 1
+    max-width: 400px
+    margin: 0 10px 0 0
+    padding: 0 20px
+
+  #copyright
+    padding: 30px 15px 15px 15px
+    text-align: center
