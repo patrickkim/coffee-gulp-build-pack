@@ -4,17 +4,23 @@ html, body, #site
   height: 100%
 
 body
-  background: #747474
+  background: #f4f4f4
   color: $text_color
-  font-family: "ProximaNova"
+
+  font-family: $font_base
   font-size: 18px
-  line-height: 1.5em
+  line-height: 1.3em
+
+h1, h2, h3, h4, h5
+  margin: 0 0 1em 0;
+  font-weight: normal
+  color: $text_dark
 
 #site
   transform: translate3d(0,0,0)
-  transition: transform 300ms
+  // transition: transform 300ms
 
-.wrapper
+.wrap
   position: relative
   max-width: 1400px
   min-width: 900px

@@ -4,9 +4,11 @@ sourcemaps   = require "gulp-sourcemaps"
 rename       = require "gulp-rename"
 stylus       = require "gulp-stylus"
 jeet         = require "jeet"
+nib          = require "nib"
 autoprefixer = require "gulp-autoprefixer"
 uglify       = require "gulp-uglify"
 plumber      = require "gulp-plumber"
+
 
 source_path = "src/stylesheets/app.styl"
 
@@ -14,7 +16,7 @@ gulp.task "css",  ->
   gulp.src source_path
     .pipe sourcemaps.init()
     .pipe plumber()
-    .pipe stylus(use: [jeet()])
+    .pipe stylus(use: [jeet(), nib()])
     .pipe autoprefixer("last 2 version", "ie 9")
     .pipe sourcemaps.write()
     .pipe rename("app.css")
