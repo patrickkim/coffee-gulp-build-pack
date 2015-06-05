@@ -2,7 +2,7 @@ html, body, #site
   height: 100%
 
 body
-  background: #F9F9F9
+  background: $bg_color
   color: $text_color
 
   font-family: $font_base
@@ -10,17 +10,21 @@ body
   line-height: 1.3em
 
 h1, h2, h3, h4, h5
-  margin: 0 0 1em 0;
-  font-weight: normal
+  margin: 0 0 15px 0
+  font-weight: bold
   color: $text_dark
 
+a
+  cursor: pointer
+
 #site
-  transform: translate3d(0,0,0)
+  position: relative
+  padding-top: $header_h
+  // transform: translate3d(0,0,0)
   // transition: transform 300ms
 
 .wrap
   position: relative
   max-width: 1400px
   min-width: 900px
-  width: 100%
   margin: 0 auto

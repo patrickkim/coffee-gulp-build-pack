@@ -1,37 +1,70 @@
 #footer
+  display: flex
   flex-wrap: wrap
   justify-content: center
+  overflow: auto
 
   a
-    display: block
+    display: inline-block
+    margin: 0 0 3px 0
+
+    &:hover
+      text-decoration: underline
+      color: $link_color
 
   .wrap
     display: flex
     max-width: 800px
-    margin: 0 auto
+    margin: 60px auto
 
   #foot-links
     display: flex
+
     flex: 1
     margin: 0 20px
     max-width: 400px
-    border-right: 1px solid #dedede
-
-  .logo
-    width: 60px
-    height: 60px
-    background: #ccc
+    border-right: 1px solid #D5D5D5
 
   .link-group
+    flex: 1
     padding: 20px
     margin: 0
+
+  .logo
+    $w = 60px
+
+    width: $w
+    height: $w
+    margin: 0 0 15px 0
+    background: #ccc
 
   #foot-social
     flex: 1
     max-width: 400px
     margin: 0 10px 0 0
-    padding: 0 20px
+    padding: 20px
+
+
+  h4
+    font-weight: bold
+
+  .twitter, .facebook, .instagram
+    $w = 45px
+
+    position: relative
+    display: inline-block
+    width: $w
+    height: $w
+    margin: 0 5px 0 0
+    overflow: hidden
+    text-indent: -999px
+    background: #f9f9f9
+
+    &:active
+      top: 1px
 
   #copyright
     padding: 30px 15px 15px 15px
     text-align: center
+    font-size: 14px
+    color: #999

@@ -16,7 +16,13 @@
     <div id="site">
       <header id="header">
         <div class="wrap">
-          Logo + <strong>menu</strong> <i>Italics does it work</i>
+          <div id="header-nav">
+            <a id="nav-btn"></a>
+          </div>
+
+          <div id="cart-nav">
+            <a id="cart-btn"><span class="cart-qty">0</span></a>
+          </div>
         </div>
       </header>
 
@@ -24,9 +30,9 @@
         <div class="wrap">
           <div id="product-images">
             <ul id="gallery">
-              <li class="image"><img src="/images/p-1.jpg" /></li>
-              <li class="image"><img src="/images/p-2.jpg" /></li>
-              <li class="image"><img src="/images/p-3.jpg" /></li>
+              <!-- <li class="image"><img src="/images/p-1.jpg" /></li>
+              <li class="image"><img src="/images/p-2.jpg" /></li> -->
+              <li class="image" style="background-image: url('/images/p-3.jpg')" /></li>
             </ul>
 
             <ul id="thumbnails">
@@ -69,7 +75,7 @@
         other products go here.
       </section>
 
-      <section id="mailing-list">
+      <!-- <section id="mailing-list">
         <p>
           To receive deals and updates subscribeto our mailing list below.
         </p>
@@ -78,7 +84,7 @@
           <input id="field-email" name="" type="email" required="" placeholder="Enter your email...">
           <button type="submit"><span>Subscribe</span></button>
         </form>
-      </section>
+      </section> -->
 
       <footer id="footer">
         <div class="wrap">
@@ -89,23 +95,22 @@
               <a>Our Story</a>
               <a>Contact us</a>
             </div>
+
             <div class="link-group">
-              <a>FAQ</a>
+              <a>Order Status</a>
               <a>Return Policy</a>
               <a>Shipping & Tax</a>
+              <a>Privacy Policy</a>
+              <a>Terms of Use</a>
             </div>
           </div>
 
           <div id="foot-social">
             <h4>Follow on:</h4>
-            <a href="https://twitter.com/" target="_blank">Twitter</a>,
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>,
-            <a href="http://instagram.com/" target="_blank">Instagram</a>
+            <a class="twitter" href="https://twitter.com/" target="_blank">Twitter</a>
+            <a class="facebook" href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a class="instagram" href="http://instagram.com/" target="_blank">Instagram</a>
           </div>
-        </div>
-
-        <div id="copyright">
-           Made with ❤ in NYC. 2015 &copy; company inc.
         </div>
       </footer>
     </div>

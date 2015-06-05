@@ -1,9 +1,55 @@
 #header
-  z-index: 2
-  position: absolute
+  z-index: 100
+  position: fixed
   top: 0
   left: 0
   width: 100%
-  padding-top: 50px
-  background: rgba(255,255,255, 0.5)
-  display: none
+  height: $header_h
+  background: #fff
+
+  #header-nav, #cart-nav
+    position: absolute
+    top: 0
+    padding: 1.5rem
+
+  #header-nav
+    left: 0
+
+  #cart-nav
+    right: 0
+
+  #nav-btn, #cart-btn
+    $w = 30px
+
+    display: block
+    width: $w
+    height: $w
+    background-size: contain
+    background-position: center center
+    background-repeat: no-repeat
+
+  #nav-btn
+    background-image: url("/vectors/hamburger.svg")
+
+  #cart-btn
+    $w = 45px
+    width: $w
+    height: $w
+    position: relative
+    background-image: url("/vectors/cart.svg")
+
+  .cart-qty
+    position: absolute
+    top: -5px
+    right: -5px
+    color: #fff
+    padding: 1px 3px
+    border-radius: 3px
+
+    font-weight: bold
+    font-size: 18px
+    line-height: 1em
+
+    background-color: #dc0d17
+    background-image: linear-gradient(#fa3c45, #dc0d17)
+    // box-shadow: 0 1px 1px rgba(0, 0, 0, .7)
